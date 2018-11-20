@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sujon335.loginregister.hostRegister">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/host_reg_form_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient2"
+            android:paddingBottom="30dp">
+    <TextView
+        android:id="@+id/Question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cardView"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/cardView"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="22dp"
+        android:text="What Kind Of place are u listing?"
+        android:textColor="@color/white"
+        android:textSize="21dp" />
+
+    <TextView
+        android:id="@+id/Question2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Question1"
+        android:layout_alignStart="@+id/Question1"
+        android:layout_below="@+id/Question1"
+        android:layout_marginTop="18dp"
+        android:text="What Will Guests Have?"
+        android:textColor="@color/white"/>
+
+    <Spinner
+        android:id="@+id/room_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Question2"
+        android:layout_alignStart="@+id/Question2"
+        android:layout_below="@+id/Question2"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/Question3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/room_type"
+        android:layout_alignStart="@+id/room_type"
+        android:layout_below="@+id/room_type"
+        android:text="What Type of property?"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/white"/>
+
+            <Spinner
+                android:id="@+id/property_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Question3"
+                android:layout_alignStart="@+id/Question3"
+                android:layout_below="@+id/Question3"
+                android:layout_marginTop="11dp"
+                android:backgroundTint="@color/white"
+                />
+    <EditText
+        android:id="@+id/tot_guest"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/property_type"
+        android:layout_alignLeft="@+id/property_type"
+        android:layout_alignStart="@+id/property_type"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Total Guests Capacity"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/No_of_beds"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tot_guest"
+        android:layout_alignLeft="@+id/tot_guest"
+        android:layout_alignStart="@+id/tot_guest"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="No. of bedrooms"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/No_of_baths"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/No_of_beds"
+        android:layout_alignLeft="@+id/No_of_beds"
+        android:layout_alignStart="@+id/No_of_beds"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="No. of bathrooms"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/No_of_baths"
+        android:layout_alignLeft="@+id/No_of_baths"
+        android:layout_alignStart="@+id/No_of_baths"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textNoSuggestions|textMultiLine"
+        android:clickable="true"
+        android:lines="2"
+        android:minLines="1"
+        android:gravity="top|left"
+        android:maxLines="4"
+        android:editable="false"
+        android:focusable="false"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/location"
+        android:layout_alignLeft="@+id/location"
+        android:layout_alignStart="@+id/location"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Promo Title of the place"
+        android:inputType="textNoSuggestions"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/min_stay"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/title"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Minimum No. of days to stay"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/min_stay"
+        android:layout_alignLeft="@+id/min_stay"
+        android:layout_alignStart="@+id/min_stay"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Rent of the place per day in USD"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/Phonenumber"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/price"
+        android:layout_alignLeft="@+id/price"
+        android:layout_alignStart="@+id/price"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Your contact number"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/Phonenumber"
+        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@+id/Phonenumber"
+        android:layout_below="@+id/Phonenumber"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/cardView2"
+            android:layout_alignLeft="@+id/cardView2"
+            android:layout_alignStart="@+id/cardView2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Submit"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

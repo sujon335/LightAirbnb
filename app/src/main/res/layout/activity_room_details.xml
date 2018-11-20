@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yellow"
+    tools:context="com.example.sujon335.loginregister.RoomDetailsActivity">
+
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/room_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/roomimage" />
+
+            <TextView
+                android:id="@+id/roomviewtitle"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/roomviewtype"
+                android:layout_alignRight="@+id/room_image"
+                android:layout_below="@+id/room_image"
+                android:text="Friendly Neighbourhood with great view"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/roomviewtype"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/room_image"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:text="Private Room: Apartment "
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/hosname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/roomviewtype"
+                android:layout_alignStart="@+id/roomviewtype"
+                android:layout_below="@+id/roomviewtitle"
+                android:layout_marginTop="15dp"
+                android:text="Hosted By: Sydur Rahaman"
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/totalguestsnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/hosname"
+                android:layout_alignStart="@+id/hosname"
+                android:layout_below="@+id/hosname"
+                android:layout_marginTop="19dp"
+                android:drawableLeft="@drawable/ppl_icon"
+                android:text="Total Guests: 9"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/bedsnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/totalguestsnum"
+                android:layout_alignStart="@+id/totalguestsnum"
+                android:layout_below="@id/totalguestsnum"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/bed_icon"
+                android:text="Bedrooms: 3"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/callhost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bathsnum"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_toEndOf="@+id/hosname"
+                android:layout_toRightOf="@+id/hosname"
+                android:drawableLeft="@drawable/call_icon"
+                android:text="Call Host"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/bathsnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/bedsnum"
+                android:layout_alignStart="@+id/bedsnum"
+                android:layout_below="@id/bedsnum"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/bath_icon"
+                android:text="Bathrooms: 2"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+            <TextView
+                android:id="@+id/texthost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/bathsnum"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_toEndOf="@+id/hosname"
+                android:layout_toRightOf="@+id/hosname"
+                android:drawableLeft="@drawable/msg_icon"
+                android:text="Text Host"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/minimumstay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/bathsnum"
+                android:layout_alignStart="@+id/bathsnum"
+                android:layout_below="@id/bathsnum"
+                android:layout_marginTop="15dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:text="Minimum Stay: 3 days" />
+
+            <TextView
+                android:id="@+id/priceofroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/minimumstay"
+                android:layout_alignStart="@+id/minimumstay"
+                android:layout_below="@id/minimumstay"
+                android:layout_marginTop="15dp"
+                android:textSize="15dp"
+                android:text="600 only"
+                android:drawableLeft="@drawable/price_icon"
+                android:textColor="@color/orange"
+                />
+
+
+            <TextView
+                android:id="@+id/locationroomview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/priceofroom"
+                android:layout_alignStart="@+id/priceofroom"
+                android:layout_below="@id/priceofroom"
+                android:layout_marginTop="15dp"
+                android:textSize="15dp"
+                android:text="Location: Foy's Lake, Chittagong"
+                android:drawableLeft="@drawable/marker_map_icon"
+                android:textColor="@color/black"
+                />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutmap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/locationroomview"
+                android:layout_margin="15dp">
+
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/locationmapview"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:apiKey="AIzaSyAt-PCrXleOeihXVvUnMXQdauu1SDtX8Lg" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/book"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                app:cardBackgroundColor="@color/lightgreen"
+                android:layout_below="@id/relativeLayoutmap"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/book"
+                    android:layout_alignLeft="@+id/book"
+                    android:layout_alignStart="@+id/book">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/req_booking_text"
+                        android:text="Request booking"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
